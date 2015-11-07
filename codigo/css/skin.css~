@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+img {
+    border: 4px red solid;
+}
+
+body {
+    background-color: red;
+}
+
+p {
+    color: black;
+    font-style: italic;
+}
+
+section {
+    background: url(img/background.jpg)
+    
+}
