@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <script> language="JavaScript" type="text/javascript" src="script.js"</script>
+        <title>FORMULÁRIO DE CADASTRO</title>
+</head>
+    <body>
+        <h1>FORMULÁRIO DE CADASTRO:</h1>
+        <h2>PROFESSOR</h2>
+        <form>
+            NOME COMPLETO
+            <br>
+            <input type="text" name="nome" name="sobrenome" size="60">
+            <br>
+            NASCIMENTO
+           <br>
+<input type="text" name="dia" size="2" maxlength="2" value="dd"> -
+<input type="text" name="mes" size="2" maxlength="2" value="mm"> -
+<input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+            <br></br>
+            ENDEREÇO
+        <br>
+        <input type="text" name="endereço" size="40">
+    </br>
+            BAIRRO
+        <br>
+        <input type="text" name="bairro" size="30">
+        <br></br>
+            COMPLEMENTO
+    <br>
+    <input type="text" name="complemento" size="30">
+    </br>
+            CEP
+    <br>
+    <input type="text" name="cep" size="15" maxlength="12"  onKeyPress="MascaraCep(cep);" />
+    <br>
+            UF/CIDADE
+<br>
+     <select id="Estado" name="ESTADO">
+    <option value="ESTADO">ESCOLHA O ESTADO</option>
+
+</select>
+<select id="CIDADE" name="CIDADE">
+    <option value="CIDADE">ESCOLHA A CIDADE</option>
+</select>
+<br></br>
+            NACIONALIDADE
+<br>
+<input type="text" name="nacionalidade" size="20">
+<br>
+            NATURALIDADE
+<br>
+  <select id="Estado" name="ESTADO">
+    <option value="ESTADO">ESCOLHA O ESTADO</option>
+
+</select>
+<select id="CIDADE" name="CIDADE">
+    <option value="CIDADE">ESCOLHA A CIDADE</option>
+</select>
+<br>
+            RG
+<br>
+<input type="text" name="registrogeral" size="20" maxlength="13">  
+<br>
+            CPF
+<br>
+<input type="text" name="pessoafisica" size="20" maxlength="14"> 
+    <br></br>
+    
+            
+        </form>
+    </body>
+</html>
