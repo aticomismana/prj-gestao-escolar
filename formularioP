@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+     <title>FORMULÁRIO DE CADASTRO</title>
+</head>
+    <body>
+        <h1>FORMULÁRIO DE CADASTRO:</h1>
+        <h2>PROFESSOR</h2>
+        <br></br>
+    <h2>DADOS PESSOAIS</h2>
+        <form>
+            NOME COMPLETO
+            <br>
+            <input type="text" name="nome" name="sobrenome" size="80">
+            <br></br>
+            EMAIL
+        <br>
+        <input type="text" name="email" size="40"/>
+        <br></br>
+    <table width="69%">
+    <tr>
+        <td>
+            TELEFONE/CELULAR
+        <br>
+        <input type="text" name="ddd" size="2" maxlength="2"/>
+        <input type="text" name="cel" size="11" maxlength="9"/>
+        </td>
+         <td>
+            TELEFONE RESIDENCIAL
+        <br>
+        <input type="text" name="ddd2" size="2" maxlength="2"/>
+        <input type="text" name="tel" size="15" maxlength="9"/>
+            </td>
+</tr>
+    </table>
+    <br></br>
+           DATA DE NASCIMENTO
+           <br>
+<input type="text" name="dia" size="2" maxlength="2" value="dd"/> -
+<input type="text" name="mes" size="2" maxlength="2" value="mm"/> -
+<input type="text" name="ano" size="4" maxlength="4" value="aaaa"/>
+<br></br>
+<table width="65%">
+    <tr>
+        <td>
+           NACIONALIDADE
+<br>
+<input type="text" name="nacionalidade" size="40"/>
+        </td>
+        <td>
+            NATURALIDADE
+<br>
+  <select id="Estado" name="ESTADO">
+    <option value="ESTADO">ESCOLHA O ESTADO</option>
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+
+</select>
+<select id="CIDADE" name="CIDADE">
+    <option value="CIDADE">ESCOLHA A CIDADE</option>
+</select>
+        </td>
+    </tr>
+</table>
+    <br>
+<table width="75%">
+    <tr>
+        <td>
+            RG
+<br>
+<input type="text" name="registrogeral" size="20" maxlength="10"/>  
+        </td>
+        <td>
+            CPF
+<br>
+<input type="text" name="pessoafisica" size="20" maxlength="9"/> - <input type="text" name="pessoafisica2" size="2" maxlength="2"/>
+        </td>
+    </tr>
+</table>
+<br>
+    SEXO
+<INPUT TYPE="CHECKBOX" NAME="F" 
+VALUE="FEMININO">FEMININO
+<INPUT TYPE="CHECKBOX" NAME="M" 
+VALUE="MASCULINO">MASCULINO
+    <br></br>
+<h2>ENDEREÇO</h2>
+<table width="38%">
+    <tr>
+        <td>
+            LOGRADOURO
+        <br>
+        <input type="text" name="endereço" size="50"/>
+        </td>
+        <td>
+            Nº
+ <br>
+<input type="text" name="n" size="5"/>
+        </td>
+    </tr>
+</table>
+    <br>
+            BAIRRO
+        <br>
+        <input type="text" name="bairro" size="30"/>
+        <br></br>
+<table width="55%">
+    <tr>
+        <td>
+            COMPLEMENTO
+    <br>
+    <input type="text" name="complemento" size="30"/>
+        </td>
+        <td>
+            CEP
+    <br>
+    <input type="text" name="cep" size="10" maxlength="5"/> -  <input type="text" name="cep2" size="3" maxlength="3"/>
+        </td>
+    </tr>
+</table>
+<br>
+            UF/CIDADE
+<br>
+     <select id="Estado" name="ESTADO">
+    <option value="ESTADO">ESCOLHA O ESTADO</option>
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+
+</select>
+<select id="CIDADE" name="CIDADE">
+    <option value="CIDADE">ESCOLHA A CIDADE</option>
+</select>
+<br></br>
+<h2>INFORMAÇÕES PROFISSSIONAL</h2>
+ <table width="60%">
+    <tr>
+        <td>
+NÍVEL DE FORMAÇÃO
+<br>
+<select id="FORMAÇÃO" name="FORMAÇÃO">
+<option value="CAMPO">ESCOLHA CAMPO</option>
+    <option value="SUP">SUPERIOR COMPLETO</option>
+    <option value="SUP2">SUPERIOR INCOMPLETO</option>
+    <option value="TEC">FORMAÇÃO TÉCNICA COMPLETO</option>
+    <option value="SAÚDE">FORMAÇÃO TÉCNICA EM ANDAMENTO</option>
+</select>
+        </td>
+     <td>
+ÁREA DE CONHECIMENTO
+<br>
+<select id="areaConhecimento" name="areaConhecimento">
+<option value="ÁREA">ESCOLHA ÁREA</option>
+    <option value="EXATAS">CIÊNCIAS EXATAS E DA TERRA</option>
+    <option value="BIOLÓGICAS">CIÊNCIAS BIOLÓGICAS</option>
+    <option value="ENGENHARIAS">ENGENHARIAS</option>
+    <option value="SAÚDE">CIÊNCIAS DA SAÚDE</option>
+    <option value="SOCIAIS">CIÊNCIAS SOCIAIS APLICADAS</option>
+    <option value="HUMANAS">CIÊNCIAS HUMANAS</option>
+    <option value="LINGUÍSTICA">LINGUÍSTICA, LETRAS E ARTES</option>
+    <option value="OUTROS">OUTROS</option>
+    </select>
+         </td>
+     </tr>
+</table>
+<br></br>
+ INSTITUIÇÃO
+<br>
+<input type="text" name="instituição" size="80"/>
+<br></br>
+CURSO
+<br>
+<input type="text" name="curso" size="80"/>
+<br></br>
+<table width="35%">
+    <tr>
+        <td>
+ANO DE CONCLUSÃO
+<br>
+<input type="text" name="ano" size="10" maxlength="4" value="aaaa"/>
+        </td>
+        <td>
+            CARGA HORÁRIA
+            <br>
+            <input type="text" name="ano" size="10"/>
+        </td>
+    </tr>
+</table>
+<br></br>
+<h3>FORMAÇÃO COMPLEMENTAR</h3>
+<table width="55%">
+    <tr>
+        <td>
+            FORMAÇÃO COMPLEMENTAR
+            <br>
+            <input type="text" name="compl" size="40" />
+        </td>
+        <td>
+            ANO DE CONCLUSÃO
+            <br>
+<input type="text" name="ano" size="5" maxlength="4" value="aaaa"/>
+        </td>
+        <td>
+            CARGA HORÁRIA
+            <br>
+            <input type="text" name="ano" size="5"/>
+        </td>
+    </tr>
+</table>
+<br></br>
+<table width="55%">
+    <tr>
+        <td>
+            FORMAÇÃO COMPLEMENTAR
+            <br>
+            <input type="text" name="compl" size="40" />
+        </td>
+        <td>
+            ANO DE CONCLUSÃO
+            <br>
+<input type="text" name="ano" size="5" maxlength="4" value="aaaa"/>
+        </td>
+        <td>
+            CARGA HORÁRIA
+            <br>
+            <input type="text" name="ano" size="5"/>
+        </td>
+    </tr>
+</table>
+<br></br>
+<table width="55%">
+    <tr>
+        <td>
+            FORMAÇÃO COMPLEMENTAR
+            <br>
+            <input type="text" name="compl" size="40" />
+        </td>
+        <td>
+            ANO DE CONCLUSÃO
+            <br>
+<input type="text" name="ano" size="5" maxlength="4" value="aaaa"/>
+        </td>
+        <td>
+            CARGA HORÁRIA
+            <br>
+            <input type="text" name="ano" size="5"/>
+        </td>
+    </tr>
+</table>
+<br></br>
+<table width="55%">
+    <tr>
+        <td>
+            FORMAÇÃO COMPLEMENTAR
+            <br>
+            <input type="text" name="compl" size="40" />
+        </td>
+        <td>
+            ANO DE CONCLUSÃO
+            <br>
+<input type="text" name="ano" size="5" maxlength="4" value="aaaa"/>
+        </td>
+        <td>
+            CARGA HORÁRIA
+            <br>
+            <input type="text" name="ano" size="5"/>
+        </td>
+    </tr>
+</table>
+<br></br>
+<table width="55%">
+    <tr>
+        <td>
+            FORMAÇÃO COMPLEMENTAR
+            <br>
+            <input type="text" name="compl" size="40" />
+        </td>
+        <td>
+            ANO DE CONCLUSÃO
+            <br>
+<input type="text" name="ano" size="5" maxlength="4" value="aaaa"/>
+        </td>
+        <td>
+            CARGA HORÁRIA
+            <br>
+            <input type="text" name="ano" size="5"/>
+        </td>
+    </tr>
+</table>
+<br></br>
+OUTRAS INFORMAÇÕES
+<br>
+<textarea rows="10" cols="60" maxlength="500"></textarea>
+<br></br>
+
+<h2>INFORMAÇÕES CONTRATUAL</h2>
+</form>
+    </body>
+</html>
