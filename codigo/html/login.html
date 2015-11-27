@@ -4,18 +4,25 @@
 	<link rel="stylesheet" href="../css/base.css" />
     <meta charset = 'utf-8' />
 	<title>Login</title>  
-    <header>
-		<form name="" action="" method="" >
-     		Usuario <br/><input type="text" name="Usuario" /><br/>
-        	Senha <br/><input type="password" name="Senha"/><br/>
-        	<input type="submit" onclick="alert('Hello World!')" value="Fazer Login" /><br/><br/>
-			<a href="">Esqueci Senha <a/><br/>
-			<a href="">Cadastrar-se<a/>
+<header>
+		<form name="login" action="" method="get" >
+     		Usuario <br/><input type="text" name="usuario" /><br/>
+        	Senha <br/><input type="password" name="senha"/><br/>
+        	<input type="button" onclick="fazer()" value="Fazer Login" /><br/><br/>
+			<a href="../html/telalogin.html">Esqueci Senha <a/><br/>
+			<a href="../html/telalogin.html">Cadastrar-se<a/>
         </form>
+    <script>
+                function fazer(){
+                    'use restrict';
+                    var usuario = document.login.usuario.value;
+                    var senha = document.login.senha.value;
+                        url = '/html/lg.html?usuario=' + encodeURIComponent(usuario) + '&senha';
+                    document.location.href = url;
+                }
+            </script>
     </header>
  </head>
-<body>
-    
-    
+<body>    
  </body>
 </html>
