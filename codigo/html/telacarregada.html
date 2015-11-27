@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <title>Sem</title>
+        <meta name="generator" content="Geany 1.25" /> 
+    </head>
+    <body>
+        
+        <table border='1' >
+		<tr>
+			<td>CPF</td>
+			<td id="cpf">Dados</td>
+		</tr>
+		<tr>
+			<td>Data De Nascimento</td>
+			<td id="data">Dados</td>
+        </tr>
+        <tr>
+            <td>Matricula</td>
+            <td id="matricula">Dados</td>
+        </tr>
+        <tr>
+            <td>Senha</td>
+            <td id=Senha>Dados</td>
+        </tr>
+	</table>
+	<script>
+		window.onload = function () {
+		    'use restrict';
+    var url = document.location.href;
+    var params = url.split('?')[1].split('&');
+    var dta = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+         tmp = params[i].split('=');
+         dta[tmp[0]] = tmp[1];
+    }
+    document.getElementById('cpf').innerHTML = dta.cpf;
+    document.getElementById('data').innerHTML = dta.data;
+    document.getElementById('matricula').innerHTML = dta.matricula;
+    document.getElementById('senha').innerHTML = dta.senha;
+}</script>
+    </body>
+</html>

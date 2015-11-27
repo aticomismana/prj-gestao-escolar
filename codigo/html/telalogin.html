@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="../css/base.css" />
+        <meta charset = "utf-8" />
+        <title>Cadastro De Login</title>  
+    <header>
+            <form name="cadastro" action="" method="get" >
+                CPF <br/><input type="text" name="cpf"  maxlength="11" /><br/>
+                Data De Nascimento <br/><input type="date" name="data" /><br/>
+                Matricula <br/><input type="text" name="matricula" /><br/>
+                Senha <br/><input type="password" name="senha" /><br/>
+                Repita Senha <br/><input type="password" name="repita" /><br/>
+                <input type="button" onclick="continuar()" value="Enviar" /><br/><br/>
+            </form>
+            <script>
+                function continuar(){
+                    'use restrict';
+                    var cpf = document.cadastro.cpf.value;
+                    var data = document.cadastro.data.value;
+                    var matricula = document.cadastro.matricula.value;
+                    var senha = document.cadastro.senha.value;
+                    var repita = document.cadastro.repita.value,
+                        url = '/html/telacarregada.html?cpf=' + encodeURIComponent(cpf) + '&data' + encodeURIComponent(data) + 
+                        '&matricula' + encodeURIComponent(matricula) + '&senha' 
+                    + encodeURIComponent(senha) + '&repita' + encodeURIComponent(repita);
+                    document.location.href = url;
+                }
+            </script>
+        </header>
+     </head>
+    <body>    
+     </body>
+</html>

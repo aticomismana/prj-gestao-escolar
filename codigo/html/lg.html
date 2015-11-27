@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <title>Sem</title>
+        <meta name="generator" content="Geany 1.25" /> 
+    </head>
+    <body>
+        
+        <table border='1' >
+		<tr>
+			<td>Usuario</td>
+			<td id="usuario">Dados</td>
+		</tr>
+		<tr>
+			<td>Senha</td> // sera que é ncessario exebir a senha ?
+			<td id="senha">Dados</td>
+        </tr>
+	</table>
+	<script>
+		window.onload = function () {
+		    'use restrict';
+    var url = document.location.href;
+    var params = url.split('?')[1].split('&');
+    var dta = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+         tmp = params[i].split('=');
+         dta[tmp[0]] = tmp[1];
+    }
+    document.getElementById('usuario').innerHTML = dta.usuario;
+    document.getElementById('senha').innerHTML = dta.senha;
+}</script>
+    </body>
+</html>
