@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>   
+    <head>
+        <meta charset="utf-8">
+		    <link rel="stylesheet" href="../css/skin.css">
+			<title>Formulário de cadastro aluno</title>
+			</head>
+	<body>
+	<div id="formCadastro">
+	<h3>FORMULÁRIO DE CADASTRO:</h3>
+		
+        <form id="DadosAluno">
+			<fieldset>
+			<legend><b>DADOS DO ALUNO</b></legend>
+			
+			<label>NOME COMPLETO</label>
+			</br>
+			<input type="text" autofocus  name="ncompleto" class="form-control" maxlength="50" size="50" />
+           	</br>
+			
+			<label>DATA DE NASC.</label>
+			</br>
+			<input type="text" name="validade" size="2"  maxlength="2" value="dd"/> 
+			<input type="text" name="validade" size="2" maxlength="2" value="mm"/> 
+			<input type="text" name="validade" size="4" maxlength="4" value="aaaa"/>
+           	</br>
+			
+			
+            <label>NATURALIDADE / UF</label>
+			</br>
+			<input type="text" name="NATURALIDADE"  maxlength="30" size="20"/> <input type="text" name="uf" size="2" maxlength="2"/>
+           	</br>
+			
+			
+		   	<label>SEXO</label>
+			</br>
+			<select id="Sexo" name="Sexo">
+			<option value="sexo">--selecione--</option>
+			<option value="Feminino">Feminino</option>
+			<option value="Masculino">Masculino</option>
+			</select>
+			</br>
+
+			
+			<label>ETNIA</label>
+			</br>
+			<select id="Etnia" name="Etnia">
+			<option value="etnia">--selecione--</option>
+			<option value="Amarela">Amarela</option>
+            <option value="Branca">Branca</option>
+			<option value="Indígena">Indígena</option>
+			<option value="Parda">Parda</option>
+            <option value="Preta">Preta</option>
+			<option value="Não declarada">Não declarada</option>
+			</select>
+			</br>
+	
+            <label>RG</label>
+			</br>
+			<input type="text" id="rg" name="rg"  class="form-control" maxlength="10" size="20" />  
+			</br>
+			
+            <label>ORGÃO EMISSOR</label>
+			</br>
+			<select id="orgao" name="orgao">
+			<option value="orgao">--selecione--</option>
+            <option value="aero">AERO</option>
+            <option value="exer">EXER</option>
+			<option value="mari">MARI</option>
+            <option value="pmil">PMIL</option>
+            <option value="spma">SPMA</option>	
+            <option value="ssp">SSP</option>	
+			</select>
+			</br>
+			
+            <label>CPF</label>
+			</br>
+			<input type="text" id="cpf" name="cpf" class="form-control" placeholder="000.000.000-00" maxlength="11" size="20" />
+			</br>
+			
+			
+			<label for="estCivil">ESTADO CIVIL</label></br>
+			<select id="estCivil" name="estCivil">
+			<option value="selecione">--selecione--</option>
+			<option value="casado">Casado</option>
+			<option value="divorciado">Divorciado</option>
+			<option value="solteiro">Solteiro</option>
+			<option value="união">União estável</option>
+			<option value="Viúvo">Viúvo</option>		
+			</select>
+			</br>
+
+			
+            <label>TIPO SANGUÍNEO<label>
+			</br>
+			<select id="tipo" name="tipo">
+			<option value="selecione">--selecione--</option>
+			<option value="A">A</option>
+			<option value="B">B</option>
+            <option value="AB">AB</option>
+			<option value="O">O</option>
+			</select>  
+			</br>
+
+			
+            <label>FATOR RH<label>
+			</br>
+			<select id="fator" name="fator">
+			<option value="selecione">--selecione--</option>
+			<option value="rh+">Rh+</option>
+			<option value="rh-">Rh-</option>
+			</select>  
+			</br>
+
+			
+			<label for="ptd">PORTADOR DE DEFICIÊNCIA</label></br>
+			<select id="ptd" name="PtD">
+			<option value="ptd">--selecione--</option>
+			<option value="Sim">Sim</option>
+			<option value="Não">Não</option>		
+			</select></br>
+			
+			<label for="qual">QUAL?</label></br>
+			<input id="qual" name="qual" type="text" size="50"/>
+			</br>
+			
+				
+		
+			<label for="Sexo">RELIGIÃO</label></br>
+			<select id="Sexo" name="Sexo">
+			<option value="Sexo">--selecione--</option>
+			<option value="Feminino">Sim</option>
+			<option value="Masculino">Não</option>		
+			</select></br>
+			<td align="right">
+			<label for="qual">QUAL?</label></br>
+			<input id="qual" name="qual" type="text" size="50" />
+			</br>
+			
+				
+			
+			<label for="serie">SÉRIE PRETENDIDA</label><br />
+			<select id="serie" name="serie">
+			<option value="serie">--selecione--</option>
+            <option value="1°Ano(Alfabetização)">1°Ano(Alfabetização)do ensino fundamental</option>
+            <option value="2°Ano(1°Série)">2°Ano(1°Série)do ensino fundamental</option>
+            <option value="3°Ano(2°Série)">3°Ano(2°Série)do ensino fundamental</option>
+            <option value="4°Ano(3°Série)">4°Ano(3°Série)do ensino fundamental</option>
+            <option value="5°Ano(4°Série)">5°Ano(4°Série)do ensino fundamental</option>
+            <option value="6°Ano(5°Série)">6°Ano(5°Série)do ensino fundamental</option>
+            <option value="7°Ano(6°Série)">7°Ano(6°Série)do ensino fundamental</option>
+            <option value="8°Ano(7°Série)">8°Ano(7°Série)do ensino fundamental</option>
+            <option value="9°Ano(8°Série)">9°Ano(8°Série)do ensino fundamental</option>
+            <option value="1°Série">1°Série do ensino médio</option>
+            <option value="2°Série">2°Série do ensino médio</option>
+            <option value="3°Série">3°Série do ensino médio</option></select></br>	
+
+			<label for="turno">TURNO</label></br>
+			<select id="turno" name="turno">
+			<option value="turno">--selecione--</option>
+            <option value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+			</select></br>
+			
+			<label>Nº DE MATRÍCULA</label>
+			</br>
+			<input type="text" name="matricula"  maxlength="30" size="20"/>
+           	</br>
+			
+			<label>CÓDIGO SALVADOR CARD</label>
+			</br>
+			<input type="text" name="salvCard"  maxlength="7"size="20"/>
+           	</br>
+			
+			<label>PROBLEMA DE SAÚDE</label>
+			</br>
+			<input type="text" name="probSaude"  maxlength="25"size="20"/>
+           	</br>
+			
+			<label>HABILIDADES COM AS MÃOS</label>
+			</br>
+			<select id="outras" name="outras">
+			<option value="outras">--selecione--</option>
+			<option value="canhoto">Canhoto</option>
+			<option value="destro">Destro</option>
+			<option value="ambidestro">Ambidestro</option>
+			</select></br>
+			
+			
+			<label>NACIONALIDADE</label>
+			</br>
+			<select id="nacionalidade" name="nacionalidade">
+			<option value="nacionalidade">--selecione--</option>
+			<option value="Preta">Brasileira</option>
+			<option value="Não declarada">Brasileira – nascido no exterior ou naturalizado</option>
+			<option value="Preta">Estrangeira</option>
+			</select>
+			</br>
+			
+            
+			<label>E-MAIL</label>
+			</br>
+			<input type="email" name="email" class="form-control" id="email" placeholder="email@exemplo.com" size="50" />
+			</br>
+
+            
+			<label>MEIO DE TRANSPORTE QUE O ALUNO USA PARA IR Á ESCOLA</label>
+			</br>
+            <select id="transporte" name="transporte">
+			<option value="transporte">--selecione--</option>
+			<option value="Preta">A pé</option>
+			<option value="Não declarada">De bicicleta</option>
+            <option value="Preta">De carro</option>
+			<option value="Não declarada">Transporte escolar</option>
+            <option value="Preta">Transporte público</option>
+            <option value="Preta">Outros</option>
+            </select></br></fieldset>
+
+			<fieldset>
+			<legend><b>DADOS DO PAI</b></legend>
+			
+            
+			<label>NOME COMPLETO</label>
+			</br>
+			<input type="text" name="nome" name="sobrenome" maxlength="50" size="50">
+            </br>
+
+            <label>RG</label>
+			</br>
+			<input type="text" name="registrogeral" size="18" maxlength="10"/>  
+			</br>
+			
+            <label>CPF</label>
+			</br>
+			<input type="text" name="pessoafisica" size="18" maxlength="11" />
+			</br>
+			
+			
+			<label for="pai">ESTADO CIVIL</label></br>
+			<select id="pai" name="pai">
+			<option value="pai">--selecione--</option>
+			<option value="casado">Casado</option>
+			<option value="divorciado">Divorciado</option>
+			<option value="solteiro">Solteiro</option>
+			<option value="união">União estável</option>
+			<option value="Viúvo">Viúvo</option>		
+			</select></br>
+			
+			<label for="escolaridade">ESCOLARIDADE</label></br>
+			<select id="escolaridade" name="escolaridade">
+			<option value="selecione">--selecione--</option>
+			<option value="casado">Ensino Médio</option>
+			<option value="divorciado">Superior</option>
+			<option value="solteiro">fundamental</option>
+			<option value="união">União estável</option>
+			<option value="Viúvo">Viúvo</option>		
+			</select></br>
+
+           
+			<label>TEL. RESIDENCIAL</label>
+			</br>
+			<input type="tel" name="ddd" maxlength="2" size="2" />
+			<input type="tel" name="cel" maxlength="8" size="20" />
+			</br>
+			
+            <label>TEL. CELULAR</label>
+			</br>
+			<input type="tel" name="ddd2" maxlength="2" size="2" />
+			<input type="tel" name="tel" maxlength="9" size="20" />
+            </br>
+
+            
+			<label>PROFISSÃO</label>
+			</br>
+			<input type="text" name="email" maxlength="50" size="50"/>
+			</br>
+			
+			
+			<label>E-MAIL</label>
+			</br>
+			<input type="email" name="email" class="form-control" id="email" placeholder="email@exemplo.com"  size="50"/>
+			</br>
+			</fieldset>
+
+			<fieldset>
+            <legend><b>DADOS DA MÃE</b></legend>
+            
+            
+            <label>NOME COMPLETO</label>
+			</br>
+			<input type="text" name="nome" name="sobrenome" maxlength="50" size="50">
+            </br>
+
+			
+            <label>RG</label>
+			</br>
+			<input type="text" name="registrogeral" size="18" maxlength="10"/>  
+			</br>
+			
+		   
+            <label>CPF</label>
+			</br>
+			<input type="text" name="pessoafisica" size="18" maxlength="11"/>
+			</br>
+
+			<label for="mãe">ESCOLARIDADE</label></br>
+			<select id="mãe" name="mãe">
+			<option value="mãe">--selecione--</option>
+			<option value="casado">Casado</option>
+			<option value="divorciado">Divorciado</option>
+			<option value="solteiro">Solteiro</option>
+			<option value="união">União estável</option>
+			<option value="Viúvo">Viúvo</option>
+			</select> 
+			</br>
+
+		    
+			<label for="mãe">ESTADO CIVIL</label></br>
+			<select id="mãe" name="mãe">
+			<option value="mãe">--selecione--</option>
+			<option value="casado">Casado</option>
+			<option value="divorciado">Divorciado</option>
+			<option value="solteiro">Solteiro</option>
+			<option value="união">União estável</option>
+			<option value="Viúvo">Viúvo</option>
+			</select> 
+			</br>
+
+            
+			<label>TEL. RESIDENCIAL</label>
+			</br>
+			<input type="tel" name="ddd" maxlength="2" size="2" />
+			<input type="tel" name="cel" maxlength="8" size="20" />
+			</br>
+			
+            <label>TEL. CELULAR</label>
+			</br>
+			<input type="tel" name="ddd2" maxlength="2" size="2" />
+			<input type="tel" name="tel" maxlength="9" size="20" />
+            </br>
+
+	        
+			<label>PROFISSÃO</label>
+			</br>
+			<input type="text" name="email" maxlength="50" size="50"/>
+			</br>
+			
+			
+			<label>E-MAIL</label>
+			</br>
+			<input type="email" name="email" class="form-control" id="email" placeholder="email@exemplo.com" size="50"/>
+			</br></fieldset>
+			
+			<fieldset>
+			<legend><b>ENDEREÇO RESIDENCIAL DO ALUNO</b></legend>
+
+            
+            <label>O ALUNO RESIDE COM QUEM?</label>
+			</br>
+			<input type="text" name="nome" name="sobrenome" maxlength="50" size="50">
+			</br>
+                
+			
+            <label>LOGRADOURO</label>
+			</br>
+			<input type="text" name="endereço" size="50"/>
+			</br>
+			
+			
+            <label>Nº</label>
+			</br>
+			<input type="text" name="numero" maxlength="4" size="6"/>
+			</br>
+				
+			
+			<label>COMPLEMENTO</label>
+			</br>
+			<input type="text" name="complemento"  maxlength="30" size="50"/>
+			</br>
+			
+			
+            <label>BAIRRO</label>
+			</br>
+			<input type="text" name="bairro" maxlength="30" size="50"/>
+			</br>
+			
+			
+            <label>CEP</label>
+			<br>
+			<input type="text" name="cep" maxlength="8" size="20" /> 
+			</br>
+			
+			<label>CIDADE</label>
+			</br>
+			<input type="text" name="nome" name="sobrenome" maxlength="30" size="20">
+			</br>
+
+
+			<label>ESTADO</label>
+			</br>
+			<select id="Estado" name="ESTADO">
+			<option value="ESTADO">--selecione--</option>
+			<option value="ac">Acre</option> 
+			<option value="al">Alagoas</option> 
+			<option value="am">Amazonas</option> 
+			<option value="ap">Amapá</option> 
+			<option value="ba">Bahia</option> 
+			<option value="ce">Ceará</option> 
+			<option value="df">Distrito Federal</option> 
+			<option value="es">Espírito Santo</option> 
+			<option value="go">Goiás</option> 
+			<option value="ma">Maranhão</option> 
+			<option value="mt">Mato Grosso</option> 
+			<option value="ms">Mato Grosso do Sul</option> 
+			<option value="mg">Minas Gerais</option> 
+			<option value="pa">Pará</option> 
+			<option value="pb">Paraíba</option> 
+			<option value="pr">Paraná</option> 
+			<option value="pe">Pernambuco</option> 
+			<option value="pi">Piauí</option> 
+			<option value="rj">Rio de Janeiro</option> 
+			<option value="rn">Rio Grande do Norte</option> 
+			<option value="ro">Rondônia</option> 
+			<option value="rs">Rio Grande do Sul</option> 
+			<option value="rr">Roraima</option> 
+			<option value="sc">Santa Catarina</option> 
+			<option value="se">Sergipe</option> 
+			<option value="sp">São Paulo</option> 
+			<option value="to">Tocantins</option>
+			</select>		
+			</br>
+			
+			<label>TEL. RESIDENCIAL</label>
+			</br>
+			<input type="tel" name="ddd" maxlength="2" size="2" />
+			<input type="tel" name="cel" maxlength="8" size="20" />
+		    </br>
+			
+			<label>E-MAIL</label>
+			</br>
+			<input type="email" name="email" class="form-control" id="email" placeholder="email@exemplo.com" size="50"/>
+			</br>
+			</fieldset>
+			
+			<fieldset>
+			<legend><b>INFORMAÇÕES ADICIONAIS:</b></legend>
+			
+			<label>OUTRAS INFORMAÇÕES</label>
+			<br>
+			<textarea name="Texto" rows="15" cols="60" maxlength="350" size="250"></textarea>
+			</br></br>
+</fieldset>
+</br>
+	<div id="btInput">
+    <input type="submit">
+           <input type="reset" value="Limpar"></div><br/>
+</form>
+</div>
+    </body>
+</html>
